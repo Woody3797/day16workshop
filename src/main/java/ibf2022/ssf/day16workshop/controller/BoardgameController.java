@@ -19,7 +19,7 @@ import ibf2022.ssf.day16workshop.model.Boardgame;
 import ibf2022.ssf.day16workshop.service.BoardgameService;
 
 @RestController
-@RequestMapping(path = "/api/boardgame", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(path = "/api/boardgame/", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 public class BoardgameController {
     
     @Autowired
