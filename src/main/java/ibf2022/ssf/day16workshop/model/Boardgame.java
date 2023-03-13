@@ -67,10 +67,10 @@ public class Boardgame implements Serializable{
     }
 
     public Boardgame() {
-        this.id = generateID(8);
+        this.id = generateId(8);
     }
 
-    public synchronized String generateID(int maxChars) {
+    public synchronized String generateId(int maxChars) {
         SecureRandom sr = new SecureRandom();
         StringBuilder sb = new StringBuilder();
         while (sb.length() < maxChars) {

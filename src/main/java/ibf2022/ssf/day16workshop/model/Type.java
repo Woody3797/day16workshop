@@ -25,7 +25,8 @@ public class Type implements Serializable{
     }
 
     public JsonObjectBuilder toJSON() {
-        return Json.createObjectBuilder().add("type", this.getType())
+        return Json.createObjectBuilder()
+        .add("type", this.getType())
         .add("count", this.getCount());
     }
 

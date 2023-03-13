@@ -27,7 +27,7 @@ public class DecodingBoard implements Serializable{
     public static DecodingBoard createJSON(JsonObject obj) {
         DecodingBoard d = new DecodingBoard();
         JsonNumber totalCount = obj.getJsonNumber("total_count");
-        d.setTotal_count(1);
+        d.setTotal_count(totalCount.intValue());
         return d;
     }
 }

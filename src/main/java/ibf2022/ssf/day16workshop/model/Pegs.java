@@ -36,7 +36,6 @@ public class Pegs implements Serializable{
         for (JsonObjectBuilder j : listOfTypes) {
             arrBuilder.add(j);
         }
-
         return Json.createObjectBuilder()
         .add("total_count", this.getTotal_count())
         .add("types", arrBuilder);
